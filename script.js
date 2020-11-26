@@ -37,9 +37,54 @@ for (let i = 0; i <= 15; i++) {
   // display[i].classList.add(animals[j[i]])
   display[i].innerText = `${animals[j[i]]}`
 }
-
+let countClicks = 0
+let firstPick = ''
+let toggleAnimal = ''
+let toggleArray = []
 const container = document.querySelector('#game-display')
+
 container.addEventListener('click', function (event) {
-  const toggleAnimal = event.target.innerText
-  event.target.classList.toggle(toggleAnimal)
-})
+  // if (countClicks <= 2) {
+    toggleAnimal = event.target.innerText
+    event.target.classList.toggle(toggleAnimal)
+    countClicks += 1
+    toggleArray.push(toggleAnimal)
+    
+    }
+    
+
+    // for (let i =1; i<=countClicks; i++) {
+   
+    //   if (toggleArray[i]!==toggleArray[i-1]) {
+    //     console.log('not equal')
+    //     console.log(toggleArray)
+        // event.target.classList.toggle(toggleArray[0])
+        // event.target.classList.toggle(toggleArray[1])
+        // countClicks = 0
+        // toggleArray = []
+    //   }
+    // }
+  
+// debugger
+    // if (countClicks === 1) {
+    //   firstPick = toggleAnimal
+    // } else if (countClicks === 2) {
+    //   if (firstPick === event.target.innerText) {
+    //     countClicks = 0
+    //   } else {
+    //     event.target.classList.toggle(toggleAnimal)
+    //     event.target.classList.toggle(firstPick)
+    //     countClicks = 0
+    //   }
+    // }
+  // }
+)
+
+if (countClicks > 5) {
+  console.log('Right before remove Listener')
+  container.removeEventListener('click', function (event) {
+    console.log('complete')
+  })
+  }
+
+
