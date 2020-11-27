@@ -201,8 +201,13 @@ h3 {
   border: solid 8px black;
   border-radius: 20px;
   font-size: 30px;
-  width: 500px;
-  height: 300px;
+  width: 380px;
+  height: 160px;
   align-content: flex-end;
   margin-left: 70px;
+  margin-top: 50px;
+}
+
+#results {
+  font-size: 26px;
 }
