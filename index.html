@@ -7,27 +7,104 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <!-- <script src="moment.min.js" defer></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
   <script src="script.js" defer></script>
   <title>Memory Tiles</title>
 </head>
 <body>
-  <section id="game-display" class="container">
-    <div id="display0" class="square"></div>
-    <div id="display1" class="square"></div>
-    <div id="display2" class="square"></div>
-    <div id="display3" class="square"></div>
-    <div id="display4" class="square"></div>
-    <div id="display5" class="square"></div>
-    <div id="display6" class="square"></div>
-    <div id="display7" class="square"></div>
-    <div id="display8" class="square"></div>
-    <div id="display9" class="square"></div>
-    <div id="display10" class="square"></div>
-    <div id="display11" class="square"></div>
-    <div id="display12" class="square"></div>
-    <div id="display13" class="square"></div>
-    <div id="display14" class="square"></div>
-    <div id="display15" class="square"></div>
+  <header id="header-display">
+    <h1>Welcome to Marvelous Memory Match</h1>
+  
+  </header>
+  <main class="container">
+    <section id="intro" class="column">
+      <div id="start0" class="square"></div>
+      <div id="start1" class="square"></div>
+      <div id="start2" class="square"></div>
+      <div id="start3" class="square"></div>
+      <div id="start4" class="square"></div>
+      <div id="start5" class="square"></div>
+      <div id="start6" class="square"></div>
+      <div id="start7" class="square"></div>
+      <div id="start8" class="square"></div>
+      <div id="start9" class="square"></div>
+      <div id="start10" class="square"></div>
+      <div id="start11" class="square"></div>
+      <div id="start12" class="square"></div>
+      <div id="start13" class="square"></div>
+      <div id="start14" class="square"></div>
+      <div id="start15" class="square"></div>
+    </section>
+  <section id="game-display" class="column hideme">
+    <div id="display0" class="square hideme"></div>
+    <div id="display1" class="square hideme"></div>
+    <div id="display2" class="square hideme"></div>
+    <div id="display3" class="square hideme"></div>
+    <div id="display4" class="square hideme"></div>
+    <div id="display5" class="square hideme"></div>
+    <div id="display6" class="square hideme"></div>
+    <div id="display7" class="square hideme"></div>
+    <div id="display8" class="square hideme"></div>
+    <div id="display9" class="square hideme"></div>
+    <div id="display10" class="square hideme"></div>
+    <div id="display11" class="square hideme"></div>
+    <div id="display12" class="square hideme"></div>
+    <div id="display13" class="square hideme"></div>
+    <div id="display14" class="square hideme"></div>
+    <div id="display15" class="square hideme"></div>
+    <div id="display16" class="square hideme"></div>
+    <div id="display17" class="square hideme"></div>
+    <div id="display18" class="square hideme"></div>
+    <div id="display19" class="square hideme"></div>
+    <div id="display20" class="square hideme"></div>
+    <div id="display21" class="square hideme"></div>
+    <div id="display22" class="square hideme"></div>
+    <div id="display23" class="square hideme"></div>
+    <div id="display24" class="square hideme"></div>
+    <div id="display25" class="square hideme"></div>
+    <div id="display26" class="square hideme"></div>
+    <div id="display27" class="square hideme"></div>
+    <div id="display28" class="square hideme"></div>
+    <div id="display29" class="square hideme"></div>
+    <div id="display30" class="square hideme"></div>
+    <div id="display31" class="square hideme"></div>
+    <div id="display32" class="square hideme"></div>
+    <div id="display33" class="square hideme"></div>
+    <div id="display34" class="square hideme"></div>
+    <div id="display35" class="square hideme"></div>
+    <div id="display36" class="square hideme"></div>
+    <div id="display37" class="square hideme"></div>
+    <div id="display38" class="square hideme"></div>
+    <div id="display39" class="square hideme"></div>
+    <div id="display40" class="square hideme"></div>
+    <div id="display41" class="square hideme"></div>
+    <div id="display42" class="square hideme"></div>
+    <div id="display43" class="square hideme"></div>
+    <div id="display44" class="square hideme"></div>
+    <div id="display45" class="square hideme"></div>
+    <div id="display46" class="square hideme"></div>
+
   </section>
+  <section id="console-display" class="column">
+    <h2>Choose Your Game</h2>
+    <h3>
+      <div id='flower-pic'></div>
+      <button id="flowers-easy" class="button">Easy</button>
+      <button id="flowers-medium" class="button">Medium</button>
+      <button id="flowers-difficult" class="button">Difficult</button>
+    </h3>
+    <h3>
+      <div id='animal-pic'></div>
+      <button id="animals-easy" class="button">Easy</button>
+      <button id="animals-medium" class= "button">Medium</button>
+      <button id="animals-difficult" class="button">Difficult</button>
+    </h3>
+    <h3>
+      <div id='results-panel'>Your Results</div>
+    </h3>
+
+
+  </section>
+  </main>
 </body>
 </html>

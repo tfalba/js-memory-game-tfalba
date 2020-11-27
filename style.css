@@ -1,72 +1,208 @@
-#game-display {
+
+body {
+  background-image: url("images/pexels-photomix-company-518245.jpg");
+  background: cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+header {
+  display: block;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-between
+  width: 100%;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+}
+#console-display {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+  text-align: center;
+}
+#game-display, #intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1400px;
-  height: 1400px;
+  /* flex-basis: 1500px; */
+  /* width: 2500px;
+  height: 2000px; */
+  /* width: 60%; */
   margin: 20px;
+  margin-top: 100px;
 }
 
 .square {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  height: 300px;
-  background-color: gray;
-  border: solid 5px black;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(63 81 181 / 100%);
+  border: solid 10px rgb(32 34 44);
+  border-radius: 25px;
   margin: 10px;
   color: rgba(0, 0, 0, 0);
-  /* color: black; */
   font-size: 30px;
 }
 
-.animal0 {
-  background: url("images/pexels-aleksey-kuprikov-3493730.jpg") no-repeat center; 
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-
-
+.hideme {
+  display: none;
 }
-.animal1 {
-  background: url("images/pexels-anna-shvets-4588065.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.animal0 {
+  background: url("images/animal/animal0.jpg") no-repeat center; 
+}
+.animal1, #start3 {
+  background: url("images/animal/animal1.jpg") no-repeat center;
 }
 .animal2 {
-  background: url("images/pexels-george-lebada-567540.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background: url("images/animal/animal2.jpg") no-repeat center;
 }
 .animal3 {
-  background: url("images/pexels-kat-jayne-568022.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background: url("images/animal/animal3.jpg") no-repeat center;
 }
 .animal4 {
-  background: url("images/pexels-laura-woodbury-3608263.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background: url("images/animal/animal4.jpg") no-repeat center;
 }
 .animal5 {
-  background: url("images/pexels-mark-broadhurst-106686.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background: url("images/animal/animal5.jpg") no-repeat center;
 }
 .animal6 {
-  background: url("images/pexels-pixabay-39571.jpg") no-repeat center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background: url("images/animal/animal6.jpg") no-repeat center;
 }
 .animal7 {
-  background: url("images/pexels-pixabay-47547.jpg") no-repeat center;
+  background: url("images/animal/animal7.jpg") no-repeat center;
+}
+
+.animal8 {
+  background: url("images/animal/animal8.jpg") no-repeat center; 
+}
+.animal9 {
+  background: url("images/animal/animal9.jpg") no-repeat center;
+}
+.animal10 {
+  background: url("images/animal/animal10.jpg") no-repeat center;
+}
+.animal11 {
+  background: url("images/animal/animal11.jpg") no-repeat center;
+}
+.animal12 {
+  background: url("images/animal/animal12.jpg") no-repeat center;
+}
+.animal13 {
+  background: url("images/animal/animal13.jpg") no-repeat center;
+}
+.animal14 {
+  background: url("images/animal/animal14.jpg") no-repeat center;
+}
+.animal15 {
+  background: url("images/animal/animal15.jpg") no-repeat center;
+}
+
+.animal16, #start8 {
+  background: url("images/animal/animal16.jpg") no-repeat center;
+}
+.animal17 {
+  background: url("images/animal/animal17.jpg") no-repeat center;
+}
+.animal18 {
+  background: url("images/animal/animal18.jpg") no-repeat center;
+}
+.animal19 {
+  background: url("images/animal/animal19.jpg") no-repeat center;
+}
+.flower0 {
+  background: url("images/flower/flower0.jpg") no-repeat center;
+}
+.flower1, #start10 {
+  background: url("images/flower/flower1.jpg") no-repeat center;
+}
+.flower2 {
+  background: url("images/flower/flower2.jpg") no-repeat center;
+}
+.flower3 {
+  background: url("images/flower/flower3.jpg") no-repeat center;
+}
+.flower4, #start4 {
+  background: url("images/flower/flower4.jpg") no-repeat center;
+}
+.flower5 {
+  background: url("images/flower/flower5.jpg") no-repeat center;
+}
+.flower6 {
+  background: url("images/flower/flower6.jpg") no-repeat center;
+}
+.flower7 {
+  background: url("images/flower/flower7.jpg") no-repeat center;
+}
+.animal0, .animal1, .animal2, .animal3, .animal4, .animal5, .animal6, .animal7,
+.animal8, .animal9, .animal10, .animal11, .animal12, .animal13, .animal14, .animal15,
+.animal16, .animal17, .animal18, .animal19, .flower0, .flower1, .flower2, .flower3,
+.flower4, .flower5, .flower6, .flower7, #flower-pic, #animal-pic {
   background-size: cover;
-  width: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+#start4, #start10, #start3, #start8 {
+  background-size: cover;
+}
+
+#flower-pic {
+  background: url("images/flower/flower7.jpg") no-repeat center;
+}
+
+#animal-pic {
+  background: url("images/animal/animal14.jpg") no-repeat center;
+}
+
+#flower-pic, #animal-pic {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  border: solid 10px rgb(32 34 44);
+  border-radius: 25px;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  margin-left: 120px;
+  background-size: cover;
+}
+
+.button {
+  background-color: #9aa8b061;
+    border-radius: 8px;
+    font-size: 24px;
+    /* color: white; */
+    border: solid 5px #3a3939;
+    width: 120px;
+    margin: 5px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+}
+
+#results-panel {
+  border: solid 8px black;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 500px;
   height: 300px;
+  align-content: flex-end;
+  margin-left: 70px;
 }
