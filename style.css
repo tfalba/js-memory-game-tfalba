@@ -75,7 +75,7 @@ h2 {
 .animal5 {
   background: url("images/animal/animal5.jpg") no-repeat center;
 }
-.animal6 {
+.animal6, #start8, #start15 {
   background: url("images/animal/animal6.jpg") no-repeat center;
 }
 .animal7 {
@@ -107,7 +107,7 @@ h2 {
   background: url("images/animal/animal15.jpg") no-repeat center;
 }
 
-.animal16, #start8 {
+.animal16 {
   background: url("images/animal/animal16.jpg") no-repeat center;
 }
 .animal17 {
@@ -122,7 +122,7 @@ h2 {
 .flower0 {
   background: url("images/flower/flower0.jpg") no-repeat center;
 }
-.flower1, #start10 {
+.flower1 {
   background: url("images/flower/flower1.jpg") no-repeat center;
 }
 .flower2 {
@@ -131,7 +131,7 @@ h2 {
 .flower3 {
   background: url("images/flower/flower3.jpg") no-repeat center;
 }
-.flower4, #start4 {
+.flower4, #start4, #start10 {
   background: url("images/flower/flower4.jpg") no-repeat center;
 }
 .flower5 {
@@ -152,7 +152,7 @@ h2 {
   height: 200px;
 }
 
-#start4, #start10, #start3, #start8 {
+#start4, #start10, #start3, #start8, #start15 {
   background-size: cover;
 }
 
@@ -189,7 +189,7 @@ h2 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 55px;
 }
 
 h3 {
@@ -210,4 +210,11 @@ h3 {
 
 #results {
   font-size: 26px;
+}
+
+.shimmer {
+  /* background-image: none;
+  background-color: none; */
+  background-color: rgba(255, 255, 255, 0);
+/* //  background-color: pink; */
 }
