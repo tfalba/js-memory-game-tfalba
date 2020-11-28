@@ -1,4 +1,6 @@
-
+* {
+  margin: 0px;
+}
 body {
   background-image: url("images/pexels-photomix-company-518245.jpg");
   background: cover no-repeat;
@@ -6,18 +8,17 @@ body {
   flex-direction: column;
   margin-left: 50px;
   margin-right: 50px;
-
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header {
   display: block;
   font-size: 40px;
+  margin-top: 40px;
 }
 .container {
   display: flex;
   justify-content: space-between
   width: 100%;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
 }
 #console-display {
   width: 40%;
@@ -25,6 +26,7 @@ header {
   flex-direction: column;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 h2 {
   text-align: center;
@@ -33,14 +35,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-basis: 1500px; */
-  /* width: 2500px;
-  height: 2000px; */
-  /* width: 60%; */
   margin: 20px;
   margin-top: 100px;
 }
-
 .square {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +50,6 @@ h2 {
   color: rgba(0, 0, 0, 0);
   font-size: 30px;
 }
-
 .hideme {
   display: none;
 }
@@ -81,7 +77,6 @@ h2 {
 .animal7 {
   background: url("images/animal/animal7.jpg") no-repeat center;
 }
-
 .animal8 {
   background: url("images/animal/animal8.jpg") no-repeat center; 
 }
@@ -106,7 +101,6 @@ h2 {
 .animal15 {
   background: url("images/animal/animal15.jpg") no-repeat center;
 }
-
 .animal16 {
   background: url("images/animal/animal16.jpg") no-repeat center;
 }
@@ -143,27 +137,60 @@ h2 {
 .flower7 {
   background: url("images/flower/flower7.jpg") no-repeat center;
 }
+.flower8 {
+  background: url("images/flower/flower8.jpg") no-repeat center;
+}
+.flower9 {
+  background: url("images/flower/flower9.jpg") no-repeat center;
+}
+.flower10 {
+  background: url("images/flower/flower10.jpg") no-repeat center;
+}
+.flower11 {
+  background: url("images/flower/flower11.jpg") no-repeat center;
+}
+.flower12 {
+  background: url("images/flower/flower12.jpg") no-repeat center;
+}
+.flower13 {
+  background: url("images/flower/flower13.jpg") no-repeat center;
+}
+.flower14 {
+  background: url("images/flower/flower14.jpg") no-repeat center;
+}
+.flower15 {
+  background: url("images/flower/flower15.jpg") no-repeat center;
+}
+.flower16 {
+  background: url("images/flower/flower16.jpg") no-repeat center;
+}
+.flower17 {
+  background: url("images/flower/flower17.jpg") no-repeat center;
+}
+.flower18 {
+  background: url("images/flower/flower18.jpg") no-repeat center;
+}
+.flower19 {
+  background: url("images/flower/flower19.jpg") no-repeat center;
+}
+
 .animal0, .animal1, .animal2, .animal3, .animal4, .animal5, .animal6, .animal7,
 .animal8, .animal9, .animal10, .animal11, .animal12, .animal13, .animal14, .animal15,
 .animal16, .animal17, .animal18, .animal19, .flower0, .flower1, .flower2, .flower3,
-.flower4, .flower5, .flower6, .flower7, #flower-pic, #animal-pic {
+.flower4, .flower5, .flower6, .flower7, .flower8, .flower9, .flower10, .flower11, .flower12, .flower13, .flower14, .flower15, .flower16, .flower17, .flower18, .flower19, #flower-pic, #animal-pic {
   background-size: cover;
   width: 200px;
   height: 200px;
 }
-
 #start4, #start10, #start3, #start8, #start15 {
   background-size: cover;
 }
-
 #flower-pic {
   background: url("images/flower/flower7.jpg") no-repeat center;
 }
-
 #animal-pic {
   background: url("images/animal/animal14.jpg") no-repeat center;
 }
-
 #flower-pic, #animal-pic {
   display: flex;
   flex-wrap: wrap;
@@ -177,27 +204,22 @@ h2 {
   margin-left: 120px;
   background-size: cover;
 }
-
 .button {
   background-color: #9aa8b061;
     border-radius: 8px;
     font-size: 24px;
-    /* color: white; */
     border: solid 5px #3a3939;
     width: 120px;
     margin: 5px;
 }
-
 h2 {
   font-size: 55px;
 }
-
 h3 {
   display: flex;
   align-items: center;
 }
-
-#results-panel {
+#results-panel, #time-panel {
   border: solid 8px black;
   border-radius: 20px;
   font-size: 30px;
@@ -207,14 +229,15 @@ h3 {
   margin-left: 70px;
   margin-top: 50px;
 }
-
 #results {
   font-size: 26px;
 }
-
 .shimmer {
-  /* background-image: none;
-  background-color: none; */
   background-color: rgba(255, 255, 255, 0);
-/* //  background-color: pink; */
+  background-image: none;
+}
+#score {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
