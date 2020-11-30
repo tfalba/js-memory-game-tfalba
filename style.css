@@ -55,7 +55,7 @@ h2 {
 .hideme {
   display: none;
 }
-.animal0 {
+.animal0, #start4, #start10 {
   background: url("images/animal/animal0.jpg") no-repeat center; 
 }
 .animal1, #start3 {
@@ -127,7 +127,7 @@ h2 {
 .flower3 {
   background: url("images/flower/flower3.jpg") no-repeat center;
 }
-.flower4, #start4, #start10 {
+.flower4 {
   background: url("images/flower/flower4.jpg") no-repeat center;
 }
 .flower5 {
@@ -175,11 +175,68 @@ h2 {
 .flower19 {
   background: url("images/flower/flower19.jpg") no-repeat center;
 }
+.person0 {
+  background: url("images/person/person0.jpg") no-repeat center; 
+}
+.person1 {
+  background: url("images/person/person1.jpg") no-repeat center;
+}
+.person2 {
+  background: url("images/person/person2.jpg") no-repeat center;
+}
+.person3 {
+  background: url("images/person/person3.jpg") no-repeat center;
+}
+.person4 {
+  background: url("images/person/person4.jpg") no-repeat center;
+}
+.person5 {
+  background: url("images/person/person5.jpg") no-repeat center;
+}
+.person6 {
+  background: url("images/person/person6.jpg") no-repeat center;
+}
+.person7 {
+  background: url("images/person/person7.jpg") no-repeat center;
+}
+.person8 {
+  background: url("images/person/person8.jpg") no-repeat center; 
+}
+.person9 {
+  background: url("images/person/person9.jpg") no-repeat center;
+}
+.person10 {
+  background: url("images/person/person10.jpg") no-repeat center;
+}
+.person11 {
+  background: url("images/person/person11.jpg") no-repeat center;
+}
+.person12 {
+  background: url("images/person/person12.jpg") no-repeat center;
+}
+.person13 {
+  background: url("images/person/person13.jpg") no-repeat center;
+}
+.person14 {
+  background: url("images/person/person14.jpg") no-repeat center;
+}
+.person15 {
+  background: url("images/person/person15.jpg") no-repeat center;
+}
+.person16 {
+  background: url("images/person/person16.jpg") no-repeat center;
+}
+.person17 {
+  background: url("images/person/person17.jpg") no-repeat center;
+}
 
 .animal0, .animal1, .animal2, .animal3, .animal4, .animal5, .animal6, .animal7,
 .animal8, .animal9, .animal10, .animal11, .animal12, .animal13, .animal14, .animal15,
 .animal16, .animal17, .animal18, .animal19, .flower0, .flower1, .flower2, .flower3,
-.flower4, .flower5, .flower6, .flower7, .flower8, .flower9, .flower10, .flower11, .flower12, .flower13, .flower14, .flower15, .flower16, .flower17, .flower18, .flower19, #flower-pic, #animal-pic {
+.flower4, .flower5, .flower6, .flower7, .flower8, .flower9, .flower10, .flower11, .flower12, .flower13, .flower14, .flower15, .flower16, .flower17, .flower18, .flower19, #flower-pic, #animal-pic, #person-pic,
+.person0, .person1, .person2, .person3, .person4, .person5, .person6, .person7, .person8, .person9, .person10, .person11, .person12, .person13,
+.person14, .person15, .person16, .person17, .person18, .person19 
+ {
   background-size: cover;
   width: 10rem;
   height: 10rem;
@@ -191,9 +248,14 @@ h2 {
   background: url("images/flower/flower7.jpg") no-repeat center;
 }
 #animal-pic {
-  background: url("images/animal/animal14.jpg") no-repeat center;
+  background: url("images/animal/animal2.jpg") no-repeat center;
 }
-#flower-pic, #animal-pic {
+
+#person-pic {
+  background: url("images/person/person2.jpg") no-repeat center;
+}
+
+#flower-pic, #animal-pic, #person-pic {
   display: flex;
   flex-wrap: wrap;
   width: 7rem;
@@ -245,3 +307,4 @@ h3 {
   align-items: center;
   flex-direction: column;
 }
+
