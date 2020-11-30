@@ -2,6 +2,9 @@ let animals = new Array()
 let flowers = new Array()
 const timer = document.querySelector('#timer')
 
+/* ------------------------------------------------------------------------------------------------------------------ */
+/*              In this version I am going to try adding background pics from within js vs togglig class              */
+/* ------------------------------------------------------------------------------------------------------------------ */
 
 function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -34,19 +37,11 @@ function removeMe (e) {
 /* ------------------------------------------------------------------------------------------------------------------ */
 
 function playMatch (roundSize, picChoices, picChoice) {
-
-
   const display = []
   const shuffle = []
   const start = []
   const open = []
   const matched = []
-  // var start = Date.now();
-  //   setInterval(function() {
-  //     var delta = Date.now() - start; 
-  //     output(new Date().toUTCString());
-  // }, 1000);
-
 
   for (let i = 0; i < roundSize / 2; i++) {
     picChoices[i] = picChoice + i
@@ -139,7 +134,7 @@ function playMatch (roundSize, picChoices, picChoice) {
       console.log('These are the targets that have been clicked so far: ', targetArray)
       console.log('This is the content that has been clicked so far: ', contentArray)
       console.log('This is the number of clicks so far: ', countClicks)
-      // event.target.removeEventListener('click', handler)
+      event.target.removeEventListener('click', handler)
       if (countClicks % 2 === 0) {
       // matchCheck(contentArray, targetArray) -- write a function
         if (contentArray[0] === contentArray[1]) {
@@ -152,20 +147,29 @@ function playMatch (roundSize, picChoices, picChoice) {
           targetArray[countClicks - 1].removeEventListener('click', handler)
         } else {
           console.log("We don't match!!")
+          // targetArray[countClicks-2].addEventListener('click', handler)
+          // targetArray[countClicks-1].addEventListener('click', handler)
           contentArray = []
         }
       } else if (countClicks > 2) {
         if (targetArray[countClicks - 2].innerText !== targetArray[countClicks - 3].innerText) {
           console.log('Moving on...')
           console.log(targetArray)
-          toggleMe(targetArray[countClicks - 2])
           toggleMe(targetArray[countClicks - 3])
-          // targetArray[countClicks - 3].addEventListener('click', handler(event))
-          // targetArray[countClicks - 2].addEventListener('click', handler(event))
+          toggleMe(targetArray[countClicks - 2])
+          targetArray[countClicks - 3].addEventListener('click', handler)
+          targetArray[countClicks - 2].addEventListener('click', handler)
           console.log(targetArray)
-        } else if (targetArray[countClicks - 2].innerText === targetArray[countClicks - 3].innerText) {
+        } else if (targetArray[countClicks - 3].innerText === targetArray[countClicks - 2].innerText) {
           targetArray[countClicks - 3].classList.add('shimmer')
           targetArray[countClicks - 2].classList.add('shimmer')
+          // targetArray[countClicks - 3].addEventListener('click', handler)
+          console.log(targetArray, "shimmer")
+        }
+      }
+      if (match === roundSize / 2) {
+        for (let array of targetArray) {
+          array.classList.remove('shimmer')
         }
       }
       displayResults.innerText = `Number of Clicks: ${countClicks}`
