@@ -1,5 +1,6 @@
 let animals = new Array()
 let flowers = new Array()
+let persons = new Array()
 const timer = document.querySelector('#timer')
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -214,6 +215,16 @@ consoleDisplay.addEventListener('click', function (event) {
   }
   if (event.target.id === 'flowers-difficult') {
     gameStart(36, flowers, 'flower')
+  }
+
+  if (event.target.id === 'persons-easy') {
+    gameStart(16, persons, 'person')
+  }
+  if (event.target.id === 'persons-medium') {
+    gameStart(24, persons, 'person')
+  }
+  if (event.target.id === 'persons-difficult') {
+    gameStart(36, persons, 'person')
   }
   if (event.target.id === 'reset') {
     document.location.reload()
