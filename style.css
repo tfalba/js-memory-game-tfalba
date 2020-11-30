@@ -1,32 +1,36 @@
 * {
   margin: 0px;
+  display: flex;
+}
+title {
+  display: none;
 }
 body {
   background-image: url("images/pexels-photomix-company-518245.jpg");
   background: cover no-repeat;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: .5em;
+  size: .5em;
 }
-header {
+.header-display {
   display: block;
   font-size: 40px;
-  margin-top: 40px;
+  font-size: 4rem;
+  margin-top: 1rem;
 }
 .container {
   display: flex;
-  justify-content: space-between
-  width: 100%;
+  align-items: flex-start;
 }
 #console-display {
-  width: 40%;
   display: flex;
   flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+  align-items: center;
+  margin-top: 2rem;
 }
 h2 {
   text-align: center;
@@ -34,19 +38,17 @@ h2 {
 #game-display, #intro {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-  margin-top: 100px;
+  margin-top: 2rem;
 }
 .square {
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   background-color: rgb(63 81 181 / 100%);
-  border: solid 10px rgb(32 34 44);
-  border-radius: 25px;
-  margin: 10px;
+  border: solid .5rem rgb(32 34 44);
+  border-radius: 1.5rem;
+  margin: .5rem;
   color: rgba(0, 0, 0, 0);
   font-size: 30px;
 }
@@ -179,8 +181,8 @@ h2 {
 .animal16, .animal17, .animal18, .animal19, .flower0, .flower1, .flower2, .flower3,
 .flower4, .flower5, .flower6, .flower7, .flower8, .flower9, .flower10, .flower11, .flower12, .flower13, .flower14, .flower15, .flower16, .flower17, .flower18, .flower19, #flower-pic, #animal-pic {
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
 }
 #start4, #start10, #start3, #start8, #start15 {
   background-size: cover;
@@ -194,26 +196,26 @@ h2 {
 #flower-pic, #animal-pic {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
-  height: 150px;
-  border: solid 10px rgb(32 34 44);
-  border-radius: 25px;
-  margin: 10px;
+  width: 7rem;
+  height: 7rem;
+  border: solid .4rem rgb(32 34 44);
+  border-radius: 1.3rem;
+  margin: .5rem;
   color: rgba(0, 0, 0, 0);
-  font-size: 30px;
-  margin-left: 120px;
+  font-size: 1rem;
+  /* margin-left: 120px; */
   background-size: cover;
 }
 .button {
   background-color: #9aa8b061;
-    border-radius: 8px;
-    font-size: 24px;
-    border: solid 5px #3a3939;
-    width: 120px;
-    margin: 5px;
+    border-radius: .6rem;
+    font-size: 1.5rem;
+    border: solid .3rem black;;
+    width: 7rem;
+    margin: .2rem;
 }
 h2 {
-  font-size: 55px;
+  font-size: 3rem;
 }
 h3 {
   display: flex;
@@ -221,22 +223,24 @@ h3 {
 }
 #results-panel, #time-panel {
   border: solid 8px black;
-  border-radius: 20px;
-  font-size: 30px;
-  width: 380px;
-  height: 160px;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  width: 24rem;
+  height: 10rem;
   align-content: flex-end;
-  margin-left: 70px;
-  margin-top: 50px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display:block;
 }
-#results {
-  font-size: 26px;
+#results, #timer {
+  font-size: 1.5rem;
 }
 .shimmer {
   background-color: rgba(255, 255, 255, 0);
   /* background-image: none; */
 }
 #score {
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
